@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_MyAsset/Scenes/Level1_Francis_Chalifour.unity
+    guid: e87afe9828cad2e46aee89635ddfccc2
   m_configObjects: {}
