@@ -6,7 +6,7 @@ public class GestionCollisionMurs : MonoBehaviour
 {
     private bool _touche;
 
-    private float _timer = 0;
+    private float _tempsTouche = 0;
 
 
     // Start is called before the first frame update
@@ -21,6 +21,8 @@ public class GestionCollisionMurs : MonoBehaviour
         {
             if(!_touche)
             {
+                _tempsTouche = Time.time;
+                _tempsTouche += 4;
                 _touche = true;
                 GetComponent<MeshRenderer>().material.color= Color.red;
 
@@ -32,6 +34,15 @@ public class GestionCollisionMurs : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        
+        //remet l'obstacle en jeu après 4 secondes
+        if(_touche )
+        {
+            if ( _tempsTouche == Time.time)
+            {   
+                //Debug.Log("test");
+                _touche= false;
+                GetComponent<MeshRenderer>().material.color = Color.yellow;
+            }
+        }
     }
 }

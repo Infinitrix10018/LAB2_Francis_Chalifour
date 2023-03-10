@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_MyAsset/Scenes/Level1_Francis_Chalifour.unity
     guid: e87afe9828cad2e46aee89635ddfccc2
+  - enabled: 1
+    path: Assets/_MyAsset/Scenes/Level2_Francis_Chalifour.unity
+    guid: 0a38a50f5f8518a48b6a7696cdf5bc1a
   m_configObjects: {}

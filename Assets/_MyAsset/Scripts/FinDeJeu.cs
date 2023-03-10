@@ -10,17 +10,15 @@ public class FinDeJeu : MonoBehaviour
 
     public bool _fin;
 
-    [SerializeField] private int _max_nbr = 10;
-
     private float _tempsTotal;
 
-    private int _numeroScene = 0;
+    private int _numeroScene;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        float _numeroScene = SceneManager.sceneCount;
     }
 
     // Update is called once per frame
