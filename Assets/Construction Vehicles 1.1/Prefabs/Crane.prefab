@@ -759,9 +759,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4306582432695062742}
   - component: {fileID: -806600121955618487}
+  - component: {fileID: 2583541349579792394}
+  - component: {fileID: 343999621821872889}
   m_Layer: 0
   m_Name: Crane
-  m_TagString: Untagged
+  m_TagString: vehicules
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -802,3 +804,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &2583541349579792394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306582432695062743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013070583, y: 0.095304735, z: 0.008047795}
+  m_Center: {x: 0.14243262, y: 0.039581418, z: -0.00013528769}
+--- !u!65 &343999621821872889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306582432695062743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14912316, y: 0.06584426, z: 0.08572905}
+  m_Center: {x: 0.032388832, y: -0.001499459, z: 0.00076029805}

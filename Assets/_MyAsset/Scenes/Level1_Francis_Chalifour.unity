@@ -973,7 +973,7 @@ PrefabInstance:
     - target: {fileID: 23000012859278624, guid: 5c02591794acece409986647ed6329a7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 640dc2f025ee433489ca50d9f685de47, type: 2}
+      objectReference: {fileID: 2100000, guid: 34a2d4fc8f422c345a4cc739f3ee3b81, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c02591794acece409986647ed6329a7, type: 3}
 --- !u!4 &396642259 stripped
@@ -1199,6 +1199,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae163cb2eec2594e8b3fe7e6de299c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _intensiteForce: 5
+  _listePiege:
+  - {fileID: 400025432}
+  - {fileID: 1246136133}
+  _listeRigidBody: []
 --- !u!1 &556419499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1310,7 @@ PrefabInstance:
     - target: {fileID: 23000012220716874, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 640dc2f025ee433489ca50d9f685de47, type: 2}
+      objectReference: {fileID: 2100000, guid: d3fdd53a2b5dd904fad8d824266a4cad, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
 --- !u!4 &562538788 stripped
@@ -2017,7 +2022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fin: 0
-  _max_nbr: 10
 --- !u!1001 &1246136131
 PrefabInstance:
   m_ObjectHideFlags: 0

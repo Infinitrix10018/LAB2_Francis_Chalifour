@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 714661070598637302}
   m_Layer: 0
   m_Name: Bull Dozer 2
-  m_TagString: Untagged
+  m_TagString: vehicules
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -29,12 +29,14 @@ public class GestionCollisionMurs : MonoBehaviour
 
             }
         }
+
+
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        //remet l'obstacle en jeu après 4 secondes
+        //remet l'obstacle en jeu aprï¿½s 4 secondes
         if(_touche )
         {
             if ( _tempsTouche == Time.time)
