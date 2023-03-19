@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // variable qui permet de changer la vitesse dans l'éditeur
+    // variable qui permet de changer la vitesse dans l'ï¿½diteur
     [SerializeField] private float _vitesse = 400.0f;
 
     //importation du rigidBody
     private Rigidbody _rb;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -31,17 +29,22 @@ public class Player : MonoBehaviour
 
     private void MouvementJoueur()
     {
+        
+            //avoir les positions verticals et horizontal
+            float positionX = Input.GetAxis("Horizontal");
+            float positionZ = Input.GetAxis("Vertical");
+            // faire que la direction soit celle des coordonnï¿½es donnï¿½ ci-dessus
+            Vector3 direction = new Vector3(-positionX, 0f, -positionZ); // le mouvement ï¿½tait inversï¿½, probablement un problï¿½me avec probuilder.
+            //mouvement du joueur
+            _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;
+            //normalisation du mouvement, potentiellement* ï¿½ enlevï¿½
+            direction.Normalize();
 
-        //avoir les positions verticals et horizontal
-        float positionX = Input.GetAxis("Horizontal");
-        float positionZ = Input.GetAxis("Vertical");
-        // faire que la direction soit celle des coordonnées donné ci-dessus
-        Vector3 direction = new Vector3(-positionX, 0f, -positionZ); // le mouvement était inversé, probablement un probléme avec probuilder.
-        //mouvement du joueur
-        _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;
-        //normalisation du mouvement, potentiellement* à enlevé
-        direction.Normalize();
 
-
+    }
+    //mÃ©thode qui permet de finir la partie (dÃ©sactive le joueur)
+    public void finPartieJoueur()
+    {
+        gameObject.SetActive(false);
     }
 }

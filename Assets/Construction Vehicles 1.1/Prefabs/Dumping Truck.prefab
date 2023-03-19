@@ -758,6 +758,7 @@ GameObject:
   - component: {fileID: 4496919003766822466}
   - component: {fileID: -6727906640634652696}
   - component: {fileID: 6601900340859594958}
+  - component: {fileID: 3268453893209788591}
   m_Layer: 0
   m_Name: Dumping Truck
   m_TagString: vehicules
@@ -816,3 +817,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.15800108, y: 0.07815614, z: 0.06997203}
   m_Center: {x: -0.057866447, y: 0.0016978425, z: -0.0008249619}
+--- !u!114 &3268453893209788591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4496919003766822493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c07edc99b76e940983c8e974b0a897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vitesse: 400
+  _direction_x: 1
+  _direction_y: 0
+  _direction_z: 0
+  _active: 0

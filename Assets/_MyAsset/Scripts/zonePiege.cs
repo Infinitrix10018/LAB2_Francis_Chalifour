@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class zonePiege : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class zonePiege : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // permettre que chaques piège soit ajouté a la liste des pièges. 
+        
+        // permettre que chaques piï¿½ge soit ajoutï¿½ a la liste des piï¿½ges. 
         foreach(var piege in _listePiege)
         {
             _listeRigidBody.Add(piege.GetComponent<Rigidbody>());
@@ -31,7 +33,8 @@ public class zonePiege : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // permet d'activé la gratité des pièges si le joueur va dans la zone et que la zone n'est pas déja activée.
+        int noScene = SceneManager.GetActiveScene().buildIndex;
+        // permet d'activï¿½ la gratitï¿½ des piï¿½ges si le joueur va dans la zone et que la zone n'est pas dï¿½ja activï¿½e.
         if (other.gameObject.tag == "Player" && !_activated)
         {
             Vector3 direction = new Vector3(-3f, 0f, 0f);
@@ -43,6 +46,10 @@ public class zonePiege : MonoBehaviour
             }
 
             _activated = true;
+        }
+        if( noScene == 1)
+        {
+            //_vehicule
         }
 
     }

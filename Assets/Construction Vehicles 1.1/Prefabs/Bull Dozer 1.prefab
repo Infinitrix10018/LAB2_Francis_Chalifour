@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510087614134854270}
   - component: {fileID: -1916201527185732608}
+  - component: {fileID: 1145902701852743870}
   m_Layer: 0
   m_Name: Bull Dozer 1
   m_TagString: vehicules
@@ -52,6 +53,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12105526, y: 0.06766047, z: 0.06479688}
   m_Center: {x: 0.026628865, y: -0.005717041, z: 0.0019485004}
+--- !u!114 &1145902701852743870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510087614134854271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c07edc99b76e940983c8e974b0a897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vitesse: 400
+  _direction_x: 1
+  _direction_y: 0
+  _direction_z: 0
+  _active: 0
 --- !u!1 &1863282424476369456
 GameObject:
   m_ObjectHideFlags: 0

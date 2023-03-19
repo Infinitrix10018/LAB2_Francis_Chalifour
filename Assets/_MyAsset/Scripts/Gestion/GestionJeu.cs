@@ -5,8 +5,7 @@ using UnityEngine;
 public class GestionJeu : MonoBehaviour
 {   
     // tableau qui va avoir le temps, les points et le temps total.
-    public float[,] _tableauPoint = new float[3,3]; 
-
+    public float[,] _tableauPoint = new float[4,3];
 
     private int _pointage;
 
@@ -35,9 +34,27 @@ public class GestionJeu : MonoBehaviour
     public void AugmenterPointage()
     {
         _pointage++;
-        // montre l'augmentation de points.
-        Debug.Log("nombre d'accrochage : " + _pointage);
     }
+
+    public void setPoinage(int noScene)
+    {
+       if(noScene != 0) 
+        {
+            _tableauPoint[noScene, 0] = Time.time - _tableauPoint[noScene -1, 0];
+            _tableauPoint[noScene, 1] = _pointage;
+            _tableauPoint[noScene, 2] = _tableauPoint[noScene, 0] + _pointage;
+            _pointage = 0;
+        }
+        else
+        {
+            _tableauPoint[noScene, 0] = Time.time;
+            _tableauPoint[noScene, 1] = _pointage;
+            _tableauPoint[noScene, 2] = _tableauPoint[noScene, 0] + _pointage;
+            _pointage = 0;
+        }
+    }
+
+
 
     private static void InstructionsDepart()
     {

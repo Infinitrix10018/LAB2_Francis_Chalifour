@@ -761,6 +761,7 @@ GameObject:
   - component: {fileID: -806600121955618487}
   - component: {fileID: 2583541349579792394}
   - component: {fileID: 343999621821872889}
+  - component: {fileID: -8277689587503186560}
   m_Layer: 0
   m_Name: Crane
   m_TagString: vehicules
@@ -830,3 +831,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14912316, y: 0.06584426, z: 0.08572905}
   m_Center: {x: 0.032388832, y: -0.001499459, z: 0.00076029805}
+--- !u!114 &-8277689587503186560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306582432695062743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c07edc99b76e940983c8e974b0a897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vitesse: 400
+  _direction_x: 1
+  _direction_y: 0
+  _direction_z: 0
+  _active: 0
