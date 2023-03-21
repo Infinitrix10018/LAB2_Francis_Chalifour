@@ -15,7 +15,8 @@ public class CollisionVehicule : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {  
+    {
+        _gestionJeu = FindObjectOfType<GestionJeu>();
         // permettre que chaques piège soit ajouté a la liste des pièges. 
         foreach (var piege in _listeComposant)
         {
@@ -36,7 +37,8 @@ public class CollisionVehicule : MonoBehaviour
 
                 foreach (var mesh in _listeComposant)
                 {
-                    GetComponent<MeshRenderer>().material.color = Color.red;
+                    mesh.GetComponent<MeshRenderer>().material.color = Color.red;
+                    //GetComponent<MeshRenderer>().material.color = Color.red;
                 }
 
             }
@@ -52,9 +54,10 @@ public class CollisionVehicule : MonoBehaviour
             {
                 //Debug.Log("test");
                 _touche = false;
-                foreach (var piege in _listeComposant)
+                foreach (var mesh in _listeComposant)
                 {
-                    GetComponent<MeshRenderer>().material.color = Color.red;
+                    mesh.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                    //GetComponent<MeshRenderer>().material.color = Color.red;
                 }
             }
         }

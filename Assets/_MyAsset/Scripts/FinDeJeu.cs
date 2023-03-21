@@ -37,7 +37,7 @@ public class FinDeJeu : MonoBehaviour
                
                 // récupére l'index de la scene
                 int noScene = SceneManager.GetActiveScene().buildIndex;
-
+            int noSceneFinale = SceneManager.sceneCountInBuildSettings;
           
 
                 if (noScene == (SceneManager.sceneCountInBuildSettings -1)) // si au dernier niveau

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Vehicule : MonoBehaviour
 {
     [SerializeField] private float _vitesse = 400.0f;
-    [SerializeField] private float _direction_x = 1.0f;
+    [SerializeField] private float _direction_x = 4.0f;
     [SerializeField] private float _direction_y = 0f;
     [SerializeField] private float _direction_z = 0f;
     private Rigidbody _rb;
@@ -55,6 +55,11 @@ public class Vehicule : MonoBehaviour
         }
         else
             _positif = true;
+    }
+
+    public void Active()
+    {
+        _active = true;
     }
 
 }

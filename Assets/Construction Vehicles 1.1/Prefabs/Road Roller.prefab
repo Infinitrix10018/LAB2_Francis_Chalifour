@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -5330563972015994708}
   - component: {fileID: 5432449371617512235}
   - component: {fileID: 8032816016919301256}
+  - component: {fileID: -8114983256531326667}
   m_Layer: 0
   m_Name: Road Roller
   m_TagString: vehicules
@@ -83,6 +84,25 @@ MonoBehaviour:
   _direction_y: 0
   _direction_z: 0
   _active: 0
+--- !u!114 &-8114983256531326667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2672587344073929106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c86c2b4e09f5f84182ecc67f231124c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _listeComposant:
+  - {fileID: 2898538973187068223}
+  - {fileID: 2898538973187068225}
+  - {fileID: 2898538973187068231}
+  - {fileID: 2898538973187068265}
+  - {fileID: 2898538973187068053}
+  _listeMeshRenderer: []
 --- !u!1 &2898538973187068053
 GameObject:
   m_ObjectHideFlags: 0

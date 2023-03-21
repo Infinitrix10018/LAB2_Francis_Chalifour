@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GestionJeu : MonoBehaviour
 {   
@@ -38,7 +39,9 @@ public class GestionJeu : MonoBehaviour
 
     public void setPoinage(int noScene)
     {
-       if(noScene != 0) 
+        int noDerniereScene = SceneManager.sceneCountInBuildSettings;
+
+       if (noScene != 0) 
         {
             _tableauPoint[noScene, 0] = Time.time - _tableauPoint[noScene -1, 0];
             _tableauPoint[noScene, 1] = _pointage;
@@ -52,6 +55,11 @@ public class GestionJeu : MonoBehaviour
             _tableauPoint[noScene, 2] = _tableauPoint[noScene, 0] + _pointage;
             _pointage = 0;
         }
+
+        _tableauPoint[noDerniereScene, 0] += _tableauPoint[noScene, 0];
+        _tableauPoint[noDerniereScene, 1] += _tableauPoint[noScene, 1];
+        _tableauPoint[noDerniereScene, 2] += _tableauPoint[noScene, 2];
+
     }
 
 

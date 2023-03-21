@@ -1091,6 +1091,7 @@ GameObject:
   - component: {fileID: 7665615285132521264}
   - component: {fileID: 6903306638961275923}
   - component: {fileID: -7156282653179299342}
+  - component: {fileID: 2250599572097870134}
   m_Layer: 0
   m_Name: Cement Mixer
   m_TagString: vehicules
@@ -1170,3 +1171,30 @@ MonoBehaviour:
   _direction_y: 0
   _direction_z: 0
   _active: 0
+--- !u!114 &2250599572097870134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3405319891329671482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c86c2b4e09f5f84182ecc67f231124c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _listeComposant:
+  - {fileID: 2480777196424834721}
+  - {fileID: 2480777196424834737}
+  - {fileID: 2480777196424834747}
+  - {fileID: 2480777196424834761}
+  - {fileID: 2480777196424834763}
+  - {fileID: 2480777196424834801}
+  - {fileID: 2480777196424834805}
+  - {fileID: 2480777196424834817}
+  - {fileID: 2480777196424834831}
+  - {fileID: 2480777196424834837}
+  - {fileID: 2480777196424834841}
+  - {fileID: 2480777196424834759}
+  - {fileID: 2480777196424834745}
+  _listeMeshRenderer: []

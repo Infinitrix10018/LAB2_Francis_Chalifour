@@ -762,6 +762,8 @@ GameObject:
   - component: {fileID: 2583541349579792394}
   - component: {fileID: 343999621821872889}
   - component: {fileID: -8277689587503186560}
+  - component: {fileID: 858466303185602409}
+  - component: {fileID: 7848643453665688564}
   m_Layer: 0
   m_Name: Crane
   m_TagString: vehicules
@@ -829,8 +831,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.14912316, y: 0.06584426, z: 0.08572905}
-  m_Center: {x: 0.032388832, y: -0.001499459, z: 0.00076029805}
+  m_Size: {x: 0.0416074, y: 0.06584426, z: 0.08572905}
+  m_Center: {x: -0.021368971, y: -0.0014994579, z: 0.00076029805}
 --- !u!114 &-8277689587503186560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,3 +850,37 @@ MonoBehaviour:
   _direction_y: 0
   _direction_z: 0
   _active: 0
+--- !u!114 &858466303185602409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306582432695062743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c86c2b4e09f5f84182ecc67f231124c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _listeComposant:
+  - {fileID: 3957344894022097420}
+  - {fileID: 3957344894022097492}
+  - {fileID: 3957344894022097834}
+  - {fileID: 3957344894022097824}
+  - {fileID: 3957344894022097848}
+  - {fileID: 3957344894022097508}
+  - {fileID: 3957344894022097418}
+  _listeMeshRenderer: []
+--- !u!65 &7848643453665688564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306582432695062743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10742214, y: 0.0651244, z: 0.059244577}
+  m_Center: {x: 0.053096026, y: -0.0020585663, z: -0.00013054613}
