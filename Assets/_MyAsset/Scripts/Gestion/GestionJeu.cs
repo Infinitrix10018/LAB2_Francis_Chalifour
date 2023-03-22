@@ -7,12 +7,13 @@ public class GestionJeu : MonoBehaviour
 {   
     // tableau qui va avoir le temps, les points et le temps total.
     public float[,] _tableauPoint = new float[4,3];
-
+    //variable qui permet d'enregistrer le nombre de point
     private int _pointage;
 
 
     private void Awake()
     {
+        //permet de garder un seul GestionJeu ouvert, le premier qui est créer
         int nbrGestionJeu = FindObjectsOfType<GestionJeu>().Length;
         if (nbrGestionJeu > 1)
         {
@@ -26,19 +27,23 @@ public class GestionJeu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // initialise le pointage a zero
         _pointage = 0;
 
+        //appelle la fonction InstructionDepart()
         InstructionsDepart();
     }
 
-
+    //Fonction qui permet d'augmenter les points 
     public void AugmenterPointage()
     {
         _pointage++;
     }
 
+    //fonction qui permet d'enregistrer les point, le temps et le temps total a la fin d'un niveau
     public void setPoinage(int noScene)
     {
+        // variable qui permet de savoir combien de scene il y a.
         int noDerniereScene = SceneManager.sceneCountInBuildSettings;
 
        if (noScene != 0) 
