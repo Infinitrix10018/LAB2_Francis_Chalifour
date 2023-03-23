@@ -46,21 +46,22 @@ public class GestionJeu : MonoBehaviour
         // variable qui permet de savoir combien de scene il y a.
         int noDerniereScene = SceneManager.sceneCountInBuildSettings;
 
+        //si cela n'est pas la premiere scene, prendre le temps de la scene d'avant et la soustraire au temps total du moment
        if (noScene != 0) 
-        {
+        {   
             _tableauPoint[noScene, 0] = Time.time - _tableauPoint[noScene -1, 0];
             _tableauPoint[noScene, 1] = _pointage;
             _tableauPoint[noScene, 2] = _tableauPoint[noScene, 0] + _pointage;
             _pointage = 0;
         }
-        else
+        else // si c'est la premier scene, enregistre le temps, les pointages et le temps total
         {
             _tableauPoint[noScene, 0] = Time.time;
             _tableauPoint[noScene, 1] = _pointage;
             _tableauPoint[noScene, 2] = _tableauPoint[noScene, 0] + _pointage;
             _pointage = 0;
         }
-
+       // enregistrer le total des points, du temps et du temps total.
         _tableauPoint[noDerniereScene, 0] += _tableauPoint[noScene, 0];
         _tableauPoint[noDerniereScene, 1] += _tableauPoint[noScene, 1];
         _tableauPoint[noDerniereScene, 2] += _tableauPoint[noScene, 2];
@@ -68,7 +69,7 @@ public class GestionJeu : MonoBehaviour
     }
 
 
-
+    //Instruction du départ.
     private static void InstructionsDepart()
     {
         Debug.Log("*** Course a obstacle ***");

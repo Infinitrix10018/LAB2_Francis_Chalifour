@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     {
         // position initial du joueur
         transform.position = new Vector3(45f, 0.02f, 45f);
-        //transform.Rotate(0f, 180f, 0f);
 
         //initialisation du rigidBody
         _rb = GetComponent<Rigidbody>();
@@ -24,12 +23,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        //appelle fonction de mouvement du joueur
         MouvementJoueur();
     }
 
     private void MouvementJoueur()
     {
-        
             //avoir les positions verticals et horizontal
             float positionX = Input.GetAxis("Horizontal");
             float positionZ = Input.GetAxis("Vertical");
@@ -39,8 +38,6 @@ public class Player : MonoBehaviour
             _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;
             //normalisation du mouvement, potentiellement* � enlev�
             direction.Normalize();
-
-
     }
     //méthode qui permet de finir la partie (désactive le joueur)
     public void finPartieJoueur()
